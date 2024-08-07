@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form</title>
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/saree-logo-design-women-figure-template-classic-clothing-brand-highly-suitable-brands-240558316.jpg" type="image/jpg">
+
+</head>
+<body>
+    <center>
+        <h2><i style="color: brown;">Place your order</i></h2>
+    </center>
+    <form action="./confirm Form.txt" >
+    
+
+        <fieldset style="background-color: beige;" >
+    
+
+            <legend><i>Details</i></legend>
+            <label for="name">Name: </label><input type="text" placeholder="Enter Name" id="name" autofocus required><br><br>
+
+            <label for="email">Email: </label><input type="email" placeholder="Email" id="email" required><br><br>
+
+        <label for="number">Phone Number: </label><input type="tel" placeholder="Phone Number" id="number" maxlength=10 required><br><br>
+
+        <label for="state">State </label><input list="state" required>
+            <datalist id="state"  >
+                <option value="Telangana"></option>
+                <option value="Andhra Pradesh"></option>
+                <option value="Tamil Nadu"></option>
+                <option value="Karnataka"></option>
+            </datalist><br><br>
+
+            <label for="add">Address: </label><input type="text" placeholder="Address" id="add"  required><br><br>
+        
+        </fieldset><br><br>
+        <fieldset style="background-color:rgb(220, 246, 237);">
+            <legend>Order Details</legend>
+
+            <label for="saree">Saree Details: </label>
+            <input type="text" name="Sarees" height="30" placeholder="Sarees Name" id="saree" required><br><br>
+
+            <label for="confirm">Confirm Order: </label>
+            <input type="radio" id="confirm" required><br><br>
+
+            <label for="confirm_add">Confirm Address: </label>
+            <input type="radio" id="confirm_add" required><br><br>
+
+            <label for="payment">Payment Method</label>
+            <select name="Payments" id="payment" required>
+                <option value="phonepay">Phonepay</option>
+                <option value="gpay">Gpay</option>
+                <option value="Cash">Cash on Delivery</option>
+            </select><br><br><br>
+            <center>
+                <input type="submit" style="color:black;">
+            </center>
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
